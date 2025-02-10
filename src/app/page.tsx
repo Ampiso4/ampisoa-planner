@@ -16,34 +16,27 @@ export default function Home() {
             style={{ objectFit: "cover" }}
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-fuchsia-200/40 to-purple-300/30" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#FFE6C9]/90 via-[#FCC6FF]/60 to-transparent" />
         </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-5xl font-bold mb-6 leading-tight bg-gradient-to-r from-purple-900 to-fuchsia-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold mb-6 leading-tight gradient-text">
               Plan Events With Friends, Effortlessly
             </h1>
-            <p className="text-xl mb-8 text-purple-900">
+            <p className="text-xl mb-8 text-[#2D1810]">
               Stop struggling with scheduling conflicts. Find the perfect time
               for everyone with our smart event planning tools.
             </p>
             <div className="flex gap-4">
               <Link href="/events/new">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-fuchsia-500 to-purple-500 hover:from-fuchsia-600 hover:to-purple-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-200"
-                >
+                <Button className="button-primary px-8 py-3 text-lg">
                   Create Event
                 </Button>
               </Link>
               <Link href="/login">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-purple-300 text-purple-700 hover:bg-purple-50"
-                >
+                <Button className="button-secondary px-8 py-3 text-lg">
                   Get Started
                 </Button>
               </Link>
@@ -53,14 +46,17 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <section className="py-20 bg-gradient-to-b from-purple-50 via-white to-pink-50">
+      <section
+        className="py-20"
+        style={{ background: "linear-gradient(135deg, #FFE6C9, #FCC6FF20)" }}
+      >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">
             Everything You Need to Plan Perfect Events
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="group">
-              <div className="relative h-60 mb-6 rounded-xl overflow-hidden shadow-lg">
+              <div className="card relative h-60 mb-6 rounded-xl overflow-hidden">
                 <Image
                   src="https://picsum.photos/id/1006/800/600"
                   alt="Smart Scheduling"
@@ -68,12 +64,12 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   className="transition-transform group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent group-hover:from-fuchsia-100/90 transition-colors" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#FFE6C9]/90 to-transparent group-hover:from-[#FFC785]/90 transition-colors" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-xl font-semibold mb-1 text-purple-900">
+                  <h3 className="text-xl font-semibold mb-1 text-[#2D1810]">
                     Smart Scheduling
                   </h3>
-                  <p className="text-purple-700">
+                  <p className="text-[#2D1810]/80">
                     Find the perfect time that works for everyone.
                   </p>
                 </div>
@@ -81,7 +77,7 @@ export default function Home() {
             </div>
 
             <div className="group">
-              <div className="relative h-60 mb-6 rounded-xl overflow-hidden shadow-lg">
+              <div className="card relative h-60 mb-6 rounded-xl overflow-hidden">
                 <Image
                   src="https://picsum.photos/id/1045/800/600"
                   alt="Real-time Updates"
@@ -89,12 +85,12 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   className="transition-transform group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent group-hover:from-fuchsia-100/90 transition-colors" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#FFE6C9]/90 to-transparent group-hover:from-[#FFC785]/90 transition-colors" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-xl font-semibold mb-1 text-purple-900">
+                  <h3 className="text-xl font-semibold mb-1 text-[#2D1810]">
                     Real-time Updates
                   </h3>
-                  <p className="text-purple-700">
+                  <p className="text-[#2D1810]/80">
                     Stay synchronized with instant notifications.
                   </p>
                 </div>
@@ -102,7 +98,7 @@ export default function Home() {
             </div>
 
             <div className="group">
-              <div className="relative h-60 mb-6 rounded-xl overflow-hidden shadow-lg">
+              <div className="card relative h-60 mb-6 rounded-xl overflow-hidden">
                 <Image
                   src="https://picsum.photos/id/1081/800/600"
                   alt="Calendar Integration"
@@ -110,12 +106,12 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   className="transition-transform group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent group-hover:from-fuchsia-100/90 transition-colors" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#FFE6C9]/90 to-transparent group-hover:from-[#FFC785]/90 transition-colors" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-xl font-semibold mb-1 text-purple-900">
+                  <h3 className="text-xl font-semibold mb-1 text-[#2D1810]">
                     Calendar Integration
                   </h3>
-                  <p className="text-purple-700">
+                  <p className="text-[#2D1810]/80">
                     Sync seamlessly with your favorite calendar.
                   </p>
                 </div>
@@ -134,21 +130,18 @@ export default function Home() {
             fill
             style={{ objectFit: "cover" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-fuchsia-100/60 to-purple-200/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#FFE6C9]/90 via-[#FCC6FF]/70 to-[#FFA09B]/60" />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-3xl font-bold text-purple-900 mb-6">
+          <h2 className="text-3xl font-bold text-[#2D1810] mb-6">
             Ready to Start Planning?
           </h2>
-          <p className="text-xl text-purple-700 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[#2D1810]/80 mb-8 max-w-2xl mx-auto">
             Join thousands of people who are already using Ampisoa Planner to
             organize better events.
           </p>
           <Link href="/register">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-fuchsia-500 to-purple-500 hover:from-fuchsia-600 hover:to-purple-600 text-white shadow-lg hover:shadow-xl transition-all duration-200"
-            >
+            <Button className="button-primary px-8 py-3 text-lg">
               Create Free Account
             </Button>
           </Link>

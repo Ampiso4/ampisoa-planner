@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Force light mode regardless of system preference */
+/* Custom color palette */
+:root {
+  --color-primary: #FFA09B;
+  --color-secondary: #FFC785;
+  --color-accent: #FCC6FF;
+  --color-background: #FFE6C9;
+}
+
+/* Force light mode with custom colors */
 :root {
   color-scheme: light;
 }
@@ -12,14 +20,95 @@ html {
 }
 
 body {
-  background-color: white;
-  color: #171717;
+  background: linear-gradient(135deg, #FFE6C9, #FCC6FF10);
+  color: #2D1810;
 }
 
-/* Make sure form elements stay in light mode */
+/* Custom component styles */
+.gradient-border {
+  border-color: #FCC6FF;
+  background-image: linear-gradient(to right, #FFE6C9, #FCC6FF20);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #FFA09B, #FFC785);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.button-primary {
+  background: linear-gradient(to right, #FFA09B, #FFC785);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  background: linear-gradient(to right, #FF8E88, #FFB970);
+  box-shadow: 0 4px 12px rgba(255, 160, 155, 0.3);
+}
+
+.button-secondary {
+  background: #FCC6FF;
+  color: #2D1810;
+  transition: all 0.3s ease;
+}
+
+.button-secondary:hover {
+  background: #FFB9FF;
+  box-shadow: 0 4px 12px rgba(252, 198, 255, 0.3);
+}
+
+.card {
+  background: rgba(255, 230, 201, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(252, 198, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255, 230, 201, 0.9);
+  border-color: rgba(252, 198, 255, 0.5);
+  box-shadow: 0 8px 24px rgba(255, 199, 133, 0.2);
+}
+
+/* Form elements */
 input,
 textarea,
 select {
   color-scheme: light;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #FCC6FF;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #FFA09B;
+  box-shadow: 0 0 0 2px rgba(255, 160, 155, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFE6C9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFC785;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA09B;
+}
+
+/* Selection color */
+::selection {
+  background: #FCC6FF;
+  color: #2D1810;
 }
