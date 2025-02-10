@@ -31,6 +31,24 @@ const themes = [
       accent: "#BBD0FF",
     },
   },
+  {
+    name: "Extra",
+    colors: {
+      primary: "#854836",
+      secondary: "#FFB22C",
+      background: "#000000",
+      accent: "#F7F7F7",
+    },
+  },
+  {
+    name: "Lovely",
+    colors: {
+      primary: "#09122C",
+      secondary: "#BE3144",
+      background: "#E17564",
+      accent: "#872341",
+    },
+  },
 ];
 
 export default function ThemeMenu() {
