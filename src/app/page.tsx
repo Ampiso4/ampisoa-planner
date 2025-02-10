@@ -10,7 +10,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/id/1076/2000/1000"
+            src="https://picsum.photos/id/223/2000/1000"
             alt="Hero background"
             fill
             style={{ objectFit: "cover" }}

@@ -9,7 +9,7 @@ export default function DashboardPage() {
       style={{ background: "linear-gradient(135deg, #FFE6C9, #FCC6FF20)" }}
     >
       {/* Hero Section */}
-      <div className="relative h-[200px] md:h-[300px] mb-8">
+      <div className="relative h-[200px] md:h-[300px] mb-8 rounded-b-[32px] overflow-hidden">
         <Image
           src="https://picsum.photos/id/1058/2000/800"
           alt="Dashboard hero"
@@ -36,8 +36,8 @@ export default function DashboardPage() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Upcoming Events Card */}
-          <div className="card group relative overflow-hidden">
-            <div className="relative h-48">
+          <div className="card group relative overflow-hidden rounded-[24px]">
+            <div className="relative h-48 rounded-t-[24px] overflow-hidden">
               <Image
                 src="https://picsum.photos/id/1042/800/600"
                 alt="Calendar"
@@ -53,13 +53,13 @@ export default function DashboardPage() {
                 <p className="text-[#2D1810]/80 text-sm">Your next 7 days</p>
               </div>
             </div>
-            <div className="p-4">
+            <div className="p-6">
               <div className="space-y-3">
                 <p className="text-[#2D1810]/70 text-sm">
                   No upcoming events this week
                 </p>
                 <Link href="/events/new">
-                  <Button className="button-primary w-full">
+                  <Button className="button-primary w-full rounded-xl">
                     Schedule New Event
                   </Button>
                 </Link>
@@ -68,8 +68,8 @@ export default function DashboardPage() {
           </div>
 
           {/* Pending Invitations Card */}
-          <div className="card group relative overflow-hidden">
-            <div className="relative h-48">
+          <div className="card group relative overflow-hidden rounded-[24px]">
+            <div className="relative h-48 rounded-t-[24px] overflow-hidden">
               <Image
                 src="https://picsum.photos/id/1066/800/600"
                 alt="Invitations"
@@ -87,7 +87,7 @@ export default function DashboardPage() {
                 </p>
               </div>
             </div>
-            <div className="p-4">
+            <div className="p-6">
               <p className="text-[#2D1810]/70 text-sm">
                 No pending invitations
               </p>
@@ -95,8 +95,8 @@ export default function DashboardPage() {
           </div>
 
           {/* Recent Activity Card */}
-          <div className="card group relative overflow-hidden">
-            <div className="relative h-48">
+          <div className="card group relative overflow-hidden rounded-[24px]">
+            <div className="relative h-48 rounded-t-[24px] overflow-hidden">
               <Image
                 src="https://picsum.photos/id/1059/800/600"
                 alt="Activity"
@@ -112,7 +112,7 @@ export default function DashboardPage() {
                 <p className="text-[#2D1810]/80 text-sm">Latest updates</p>
               </div>
             </div>
-            <div className="p-4">
+            <div className="p-6">
               <p className="text-[#2D1810]/70 text-sm">No recent activity</p>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function DashboardPage() {
           {/* Quick Stats */}
           <div className="lg:col-span-3">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="card p-6 text-center">
+              <div className="card p-6 text-center rounded-[20px]">
                 <div className="w-12 h-12 rounded-full bg-[#FCC6FF]/30 flex items-center justify-center mx-auto mb-3">
                   <svg
                     className="w-6 h-6 text-[#FFA09B]"
@@ -140,7 +140,7 @@ export default function DashboardPage() {
                 <p className="text-[#2D1810]/60 text-sm">Total Events</p>
               </div>
 
-              <div className="card p-6 text-center">
+              <div className="card p-6 text-center rounded-[20px]">
                 <div className="w-12 h-12 rounded-full bg-[#FCC6FF]/30 flex items-center justify-center mx-auto mb-3">
                   <svg
                     className="w-6 h-6 text-[#FFA09B]"
@@ -160,7 +160,7 @@ export default function DashboardPage() {
                 <p className="text-[#2D1810]/60 text-sm">Participants</p>
               </div>
 
-              <div className="card p-6 text-center">
+              <div className="card p-6 text-center rounded-[20px]">
                 <div className="w-12 h-12 rounded-full bg-[#FCC6FF]/30 flex items-center justify-center mx-auto mb-3">
                   <svg
                     className="w-6 h-6 text-[#FFA09B]"
@@ -180,7 +180,7 @@ export default function DashboardPage() {
                 <p className="text-[#2D1810]/60 text-sm">Upcoming</p>
               </div>
 
-              <div className="card p-6 text-center">
+              <div className="card p-6 text-center rounded-[20px]">
                 <div className="w-12 h-12 rounded-full bg-[#FCC6FF]/30 flex items-center justify-center mx-auto mb-3">
                   <svg
                     className="w-6 h-6 text-[#FFA09B]"
