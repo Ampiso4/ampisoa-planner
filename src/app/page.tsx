@@ -16,16 +16,16 @@ export default function Home() {
             style={{ objectFit: "cover" }}
             priority
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-fuchsia-200/40 to-purple-300/30" />
         </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl text-white">
-            <h1 className="text-5xl font-bold mb-6 leading-tight">
+          <div className="max-w-2xl">
+            <h1 className="text-5xl font-bold mb-6 leading-tight bg-gradient-to-r from-purple-900 to-fuchsia-600 bg-clip-text text-transparent">
               Plan Events With Friends, Effortlessly
             </h1>
-            <p className="text-xl mb-8 text-gray-200">
+            <p className="text-xl mb-8 text-purple-900">
               Stop struggling with scheduling conflicts. Find the perfect time
               for everyone with our smart event planning tools.
             </p>
@@ -33,7 +33,7 @@ export default function Home() {
               <Link href="/events/new">
                 <Button
                   size="lg"
-                  className="bg-white text-black hover:bg-gray-100"
+                  className="bg-gradient-to-r from-fuchsia-500 to-purple-500 hover:from-fuchsia-600 hover:to-purple-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-200"
                 >
                   Create Event
                 </Button>
@@ -42,7 +42,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="text-white border-white hover:bg-white/10"
+                  className="border-purple-300 text-purple-700 hover:bg-purple-50"
                 >
                   Get Started
                 </Button>
@@ -53,14 +53,14 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-b from-purple-50 via-white to-pink-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">
             Everything You Need to Plan Perfect Events
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="group">
-              <div className="relative h-60 mb-6 rounded-xl overflow-hidden">
+              <div className="relative h-60 mb-6 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src="https://picsum.photos/id/1006/800/600"
                   alt="Smart Scheduling"
@@ -68,16 +68,20 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   className="transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent group-hover:from-fuchsia-100/90 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="text-xl font-semibold mb-1 text-purple-900">
+                    Smart Scheduling
+                  </h3>
+                  <p className="text-purple-700">
+                    Find the perfect time that works for everyone.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Smart Scheduling</h3>
-              <p className="text-gray-600">
-                Automatically find the best time that works for everyone with
-                our intelligent scheduling system.
-              </p>
             </div>
 
             <div className="group">
-              <div className="relative h-60 mb-6 rounded-xl overflow-hidden">
+              <div className="relative h-60 mb-6 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src="https://picsum.photos/id/1045/800/600"
                   alt="Real-time Updates"
@@ -85,16 +89,20 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   className="transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent group-hover:from-fuchsia-100/90 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="text-xl font-semibold mb-1 text-purple-900">
+                    Real-time Updates
+                  </h3>
+                  <p className="text-purple-700">
+                    Stay synchronized with instant notifications.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Real-time Updates</h3>
-              <p className="text-gray-600">
-                Get instant notifications about event changes and keep everyone
-                in sync.
-              </p>
             </div>
 
             <div className="group">
-              <div className="relative h-60 mb-6 rounded-xl overflow-hidden">
+              <div className="relative h-60 mb-6 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src="https://picsum.photos/id/1081/800/600"
                   alt="Calendar Integration"
@@ -102,14 +110,16 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   className="transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent group-hover:from-fuchsia-100/90 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="text-xl font-semibold mb-1 text-purple-900">
+                    Calendar Integration
+                  </h3>
+                  <p className="text-purple-700">
+                    Sync seamlessly with your favorite calendar.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3">
-                Calendar Integration
-              </h3>
-              <p className="text-gray-600">
-                Seamlessly sync with your favorite calendar apps to avoid
-                scheduling conflicts.
-              </p>
             </div>
           </div>
         </div>
@@ -124,18 +134,21 @@ export default function Home() {
             fill
             style={{ objectFit: "cover" }}
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-fuchsia-100/60 to-purple-200/60" />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-3xl font-bold text-purple-900 mb-6">
             Ready to Start Planning?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-purple-700 mb-8 max-w-2xl mx-auto">
             Join thousands of people who are already using Ampisoa Planner to
             organize better events.
           </p>
           <Link href="/register">
-            <Button size="lg" className="bg-white text-black hover:bg-gray-100">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-fuchsia-500 to-purple-500 hover:from-fuchsia-600 hover:to-purple-600 text-white shadow-lg hover:shadow-xl transition-all duration-200"
+            >
               Create Free Account
             </Button>
           </Link>
