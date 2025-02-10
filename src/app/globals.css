@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom color palette */
+/* Theme Variables */
 :root {
   --color-primary: #FFA09B;
-  --color-secondary: #FFC785;
-  --color-accent: #FCC6FF;
+  --color-secondary: #FCC6FF;
   --color-background: #FFE6C9;
+  --color-accent: #FFC785;
+  --color-text: #2D1810;
 }
 
-/* Force light mode with custom colors */
+/* Force light mode with theme colors */
 :root {
   color-scheme: light;
 }
@@ -20,56 +21,51 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #FFE6C9, #FCC6FF10);
-  color: #2D1810;
+  background: linear-gradient(135deg, var(--color-background), color-mix(in srgb, var(--color-secondary) 20%, transparent));
+  color: var(--color-text);
 }
 
 /* Custom component styles */
-.gradient-border {
-  border-color: #FCC6FF;
-  background-image: linear-gradient(to right, #FFE6C9, #FCC6FF20);
-}
-
 .gradient-text {
-  background: linear-gradient(to right, #FFA09B, #FFC785);
+  background: linear-gradient(to right, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .button-primary {
-  background: linear-gradient(to right, #FFA09B, #FFC785);
+  background: linear-gradient(to right, var(--color-primary), var(--color-accent));
   color: white;
   transition: all 0.3s ease;
 }
 
 .button-primary:hover {
-  background: linear-gradient(to right, #FF8E88, #FFB970);
-  box-shadow: 0 4px 12px rgba(255, 160, 155, 0.3);
+  filter: brightness(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .button-secondary {
-  background: #FCC6FF;
-  color: #2D1810;
+  background: var(--color-secondary);
+  color: var(--color-text);
   transition: all 0.3s ease;
 }
 
 .button-secondary:hover {
-  background: #FFB9FF;
-  box-shadow: 0 4px 12px rgba(252, 198, 255, 0.3);
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card {
-  background: rgba(255, 230, 201, 0.7);
+  background: color-mix(in srgb, var(--color-background) 70%, white);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(252, 198, 255, 0.3);
+  border: 1px solid color-mix(in srgb, var(--color-secondary) 30%, transparent);
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  background: rgba(255, 230, 201, 0.9);
-  border-color: rgba(252, 198, 255, 0.5);
-  box-shadow: 0 8px 24px rgba(255, 199, 133, 0.2);
+  background: color-mix(in srgb, var(--color-background) 90%, white);
+  border-color: color-mix(in srgb, var(--color-secondary) 50%, transparent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Form elements */
@@ -77,15 +73,15 @@ input,
 textarea,
 select {
   color-scheme: light;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid #FCC6FF;
+  background-color: color-mix(in srgb, white 70%, transparent);
+  border: 1px solid var(--color-secondary);
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #FFA09B;
-  box-shadow: 0 0 0 2px rgba(255, 160, 155, 0.2);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 20%, transparent);
 }
 
 /* Custom scrollbar */
@@ -95,20 +91,20 @@ select:focus {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FFE6C9;
+  background: var(--color-background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFC785;
+  background: var(--color-accent);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFA09B;
+  background: var(--color-primary);
 }
 
 /* Selection color */
 ::selection {
-  background: #FCC6FF;
-  color: #2D1810;
+  background: var(--color-secondary);
+  color: var(--color-text);
 }
