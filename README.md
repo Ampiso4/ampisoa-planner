@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ampisoa Planner 🎉
 
-## Getting Started
+A modern event planning application built with Next.js that helps users create, manage, and coordinate events effortlessly.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Dashboard**
+  - Visual event cards with hover effects
+  - Quick stats overview
+  - Recent activity tracking
+  - Upcoming events display
+
+- **Theme System**
+  - Multiple color themes:
+    - Default: #FFA09B, #FCC6FF, #FFE6C9, #FFC785
+    - Rose: #FF8BA7, #FFC6D9, #FFE4E6, #FF9EAF
+    - Lavender: #B8C0FF, #D4DAFF, #E7E9FF, #BBD0FF
+  - Theme selector in navigation
+  - Consistent styling across components
+
+- **Event Management**
+  - Create new events with detailed forms
+  - Invite participants
+  - Set alternative dates for voting
+  - Track RSVPs and responses
+
+- **Responsive Design**
+  - Mobile-first approach
+  - Adaptive layouts
+  - Touch-friendly interfaces
+  - Smooth animations
+
+## 🚀 Technologies
+
+- **Frontend Framework**
+  - Next.js 14
+  - React 18
+  - TypeScript
+
+- **Styling**
+  - Tailwind CSS
+  - CSS Variables for theming
+  - Custom animations
+  - Responsive design patterns
+
+- **UI Components**
+  - Custom button components
+  - Theme selector
+  - Card layouts
+  - Form elements
+
+- **Development Tools**
+  - ESLint
+  - Prettier
+  - TypeScript
+  - Post CSS
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ampisoa-planner.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   cd ampisoa-planner
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 🎨 Design System
+
+### Colors
+- **Primary**: #FFA09B (Coral Pink)
+- **Secondary**: #FCC6FF (Light Pink)
+- **Background**: #FFE6C9 (Soft Peach)
+- **Accent**: #FFC785 (Warm Orange)
+- **Text**: #2D1810 (Dark Brown)
+
+### Typography
+- **Headings**: Geist Sans
+- **Body**: Geist Sans
+- **Monospace**: Geist Mono (for code elements)
+
+### Components
+- **Cards**
+  - Large radius (24px) for feature cards
+  - Medium radius (20px) for stats cards
+  - Hover animations and transitions
+  - Gradient overlays
+
+- **Buttons**
+  - Primary: Gradient background
+  - Secondary: Solid background
+  - Ghost: Transparent with hover effect
+  - Consistent rounded corners
+
+- **Forms**
+  - Clean, minimal design
+  - Clear validation states
+  - Responsive layouts
+  - Accessible inputs
+
+## 🛠 Project Structure
+
+```
+ampisoa-planner/
+├── src/
+│   ├── app/               # Next.js 14 app directory
+│   │   ├── dashboard/     # Dashboard page
+│   │   ├── events/       # Events pages
+│   │   ├── profile/      # User profile
+│   │   └── login/        # Authentication
+│   ├── components/       # Reusable components
+│   │   ├── layout/       # Layout components
+│   │   ├── ui/          # UI components
+│   │   └── theme/       # Theme components
+│   └── lib/             # Utilities and helpers
+├── public/              # Static assets
+└── styles/             # Global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔒 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+NEXT_PUBLIC_API_URL=your_api_url
+```
 
-## Learn More
+## 📱 Responsive Breakpoints
 
-To learn more about Next.js, take a look at the following resources:
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙏 Acknowledgments
+
+- Design inspiration from modern web applications
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- Vercel for hosting and deployment
